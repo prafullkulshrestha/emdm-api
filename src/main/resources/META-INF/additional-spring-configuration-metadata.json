@@ -1,0 +1,47 @@
+{"properties": [
+  {
+    "name": "emdm.application.version.one",
+    "type": "java.lang.String",
+    "description": "A description for 'emdm.application.version.one'"
+  },
+  {
+    "name": "emdm.application.version.two",
+    "type": "java.lang.String",
+    "description": "A description for 'emdm.application.version.two'"
+  },
+  {
+    "name": "emdm.application.rate.limit.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'emdm.application.rate.limit.enabled'"
+  },
+  {
+    "name": "emdm.application.rate.limit.hourly",
+    "type": "java.lang.String",
+    "description": "A description for 'emdm.application.rate.limit.hourly'"
+  },
+  {
+    "name": "emdm.application.rate.limit.time.limit",
+    "type": "java.lang.String",
+    "description": "A description for 'emdm.application.rate.limit.time.limit'"
+  },
+  {
+    "name": "emdm.application.rate.limit.default",
+    "type": "java.lang.String",
+    "description": "A description for 'emdm.application.rate.limit.default'"
+  },
+  {
+    "name": "emdm.application.rate.limit.sheduler",
+    "type": "java.lang.String",
+    "description": "A description for 'emdm.application.rate.limit.sheduler'"
+  },
+  {
+    "name": "emdm.application.rate.limit.number-of-threads",
+    "type": "java.lang.String",
+    "description": "A description for 'emdm.application.rate.limit.number-of-threads'"
+  },
+  {
+    "name": "emdm.application.rate.limit.minutely.limit",
+    "type": "java.lang.String",
+    "description": "A description for 'emdm.application.rate.limit.minutely.limit'"
+  }
+]}

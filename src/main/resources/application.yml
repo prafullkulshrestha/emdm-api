@@ -1,0 +1,38 @@
+server:
+    port: 8888
+    servlet:
+      context-path: /api
+spring:
+  jpa:
+    properties:
+      hibernate.jdbc.lob.non_contextual_creation: true
+  datasource:
+    url: jdbc:postgresql://postgres:5432/emdm_api?currentSchema=emdm
+    username: emdm_user
+    password: testing
+    driver-class-name: org.postgresql.Driver
+  jackson:
+      serialization:
+        write-dates-as-timestamps: false
+logging:
+  level:
+    root: info
+    org.hibernate.SQL: info
+    org.hibernate.type: info
+    com.blueoptima: debug
+    org.springframework.web.filter.CommonsRequestLoggingFilter: info
+  file: /tmp/config/logs/emdm-api.log
+
+emdm:
+  application:
+    rate:
+      limit: 
+        enabled: true
+        default: 40
+        sheduler: 
+          numberOfThreads: 5
+        minutely:
+          limit: 2
+
+  
+
