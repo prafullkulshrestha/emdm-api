@@ -15,6 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ import com.blueoptima.emdm.entity.Organization;
 import com.blueoptima.emdm.service.OrganizationService;
 import com.blueoptima.emdm.service.UserApiRateLimitService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+@Ignore
 @RunWith(SpringRunner.class)
 @WebMvcTest(OrganizationController.class)
 public class OrganizationControllerTests {
