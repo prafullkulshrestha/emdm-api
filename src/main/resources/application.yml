@@ -8,8 +8,8 @@ spring:
       hibernate.jdbc.lob.non_contextual_creation: true
   datasource:
     url: jdbc:postgresql://localhost:5432/emdm_api?currentSchema=emdm
-    username: emdm_user
-    password: testing
+    username: postgres
+    password: pkulshrestha
     driver-class-name: org.postgresql.Driver
   jackson:
       serialization:
