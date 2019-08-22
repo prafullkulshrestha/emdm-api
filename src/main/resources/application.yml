@@ -7,7 +7,7 @@ spring:
     properties:
       hibernate.jdbc.lob.non_contextual_creation: true
   datasource:
-    url: jdbc:postgresql://postgres:5432/emdm_api?currentSchema=emdm
+    url: jdbc:postgresql://localhost:5432/emdm_api?currentSchema=emdm
     username: emdm_user
     password: testing
     driver-class-name: org.postgresql.Driver

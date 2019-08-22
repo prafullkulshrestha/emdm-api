@@ -108,3 +108,6 @@ rate limit (currently 40) will be applied.
 * We should identify the table columns on which we need indexes based upon the search criteria requirements.
 * Swagger configuration values should be externalized.
 * More documentation could be added.
+
+DB installation on linux
+https://www.linode.com/docs/databases/postgresql/how-to-install-postgresql-relational-databases-on-centos-7/
