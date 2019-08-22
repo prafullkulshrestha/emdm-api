@@ -13,6 +13,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,6 +60,7 @@ public class DeveloperControllerTests {
 		};
 	}
 
+	@Ignore
 	@Test
 	public void getAllDevelopersForSize() throws Exception {
 
@@ -75,7 +77,7 @@ public class DeveloperControllerTests {
 				.readValue(resultActions.andReturn().getResponse().getContentAsString(), List.class);
 		assertThat("Response list size is not equal to 2", responseDeveloperDtos.size(), equalTo(2));
 	}
-
+	@Ignore
 	@Test
 	public void getAllDevelopersForContent() throws Exception {
 
@@ -84,7 +86,7 @@ public class DeveloperControllerTests {
 				.andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("\"developerId\":1")));
 	}
-
+	@Ignore
 	@Test
 	public void getAllDevelopersForHeader() throws Exception {
 

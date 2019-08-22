@@ -1,9 +1,9 @@
 pipeline {
     // run on jenkins nodes tha has java 8 label
-    agent { label 'java8' }
+    agent any
     // global env variables
     environment {
-        EMAIL_RECIPIENTS = 'mahmoud.romeh@test.com'
+        EMAIL_RECIPIENTS = 'prafull.kulshrestha@gmail.com'
     }
     stages {
 
@@ -15,9 +15,9 @@ pipeline {
                     // ** NOTE: This 'M3' Maven tool must be configured
                     // **       in the global configuration.
                     echo 'Pulling...' + env.BRANCH_NAME
-                    def mvnHome = tool 'Maven 3.5.2'
+                    def mvnHome = tool 'Maven'
                     if (isUnix()) {
-                        def targetVersion = getDevVersion()
+                        def targetVersion = 1.0
                         print 'target build version...'
                         print targetVersion
                         sh "'${mvnHome}/bin/mvn' -Dintegration-tests.skip=true -Dbuild.number=${targetVersion} clean package"

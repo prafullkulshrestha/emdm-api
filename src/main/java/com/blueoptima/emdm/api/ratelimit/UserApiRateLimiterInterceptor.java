@@ -24,6 +24,7 @@ import com.blueoptima.emdm.service.UserApiRateLimitService;
 /**
  * @author prafullkulshrestha
  *
+ *
  */
 public class UserApiRateLimiterInterceptor extends HandlerInterceptorAdapter {
 
@@ -87,7 +88,7 @@ public class UserApiRateLimiterInterceptor extends HandlerInterceptorAdapter {
 		int rateLimitFromApi = userApiRateLimitService.getUserApiRateLimit(userId, api);
 		int rateLimit = (rateLimitFromApi != 0) ? rateLimitFromApi : (this.defaultLimit);
 		UserApiRateLimiter apiRateLimiter = new UserApiRateLimiter(rateLimit);
-		logger.debug("Rate limit started for the userIdApiKey: {}", userIdApiKey);
+		logger.debug("Rate limit started for the userIdApiKey: {}", userIdApiKey );
 		limiters.put(userIdApiKey, apiRateLimiter);
 		replenishPermitsForUserAfterGivenTime(userIdApiKey, apiRateLimiter, rateLimit);
 		return apiRateLimiter;
