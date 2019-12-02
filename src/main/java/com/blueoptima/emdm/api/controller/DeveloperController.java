@@ -33,7 +33,7 @@ public class DeveloperController {
 	
 	@ApiOperation(httpMethod = "GET", value = "The API for getting the details of all the developers")
 	@ApiImplicitParam(name = "User-Id", value = "User-Id", required = true, allowEmptyValue = false, paramType = "header", dataTypeClass = String.class, example = "User 1")
-	@GetMapping(value = "/v1/developers", produces = "application/json")
+	@GetMapping(value = "/v2/developers", produces = "application/json")
 	public ResponseEntity<List<DeveloperDto>> getAllDevelopers() {
 		log.debug("Request recieved for getting all the developers");
 		List<DeveloperDto> dvelopers = developerService.getAllDevelopers();
